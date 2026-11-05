@@ -1,7 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>TEXBIT | Official Website</title>
@@ -10,7 +14,11 @@
 
 <meta name="theme-color" content="#080b18">
 
+<!-- TEXBIT FAVICON -->
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +31,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -33,10 +43,19 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 27px;
     font-weight: bold;
     color: #ffffff;
     letter-spacing: 2px;
+}
+
+.logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
 }
 
 .logo span {
@@ -54,6 +73,8 @@ nav a:hover {
     color: #3985ff;
 }
 
+/* HERO */
+
 .hero {
     text-align: center;
     padding: 110px 20px 100px;
@@ -63,16 +84,16 @@ nav a:hover {
 .coin {
     width: 115px;
     height: 115px;
-    border-radius: 50%;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #1769ff, #8135dc);
-    border: 3px solid #4c8dff;
+    border-radius: 50%;
+    overflow: hidden;
     box-shadow: 0 0 40px #285cff55;
-    font-size: 43px;
-    font-weight: bold;
+}
+
+.coin img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .hero h1 {
@@ -93,6 +114,8 @@ nav a:hover {
     line-height: 1.7;
 }
 
+/* BUTTONS */
+
 .button {
     display: inline-block;
     padding: 14px 30px;
@@ -107,6 +130,8 @@ nav a:hover {
 .button:hover {
     background: #1450d0;
 }
+
+/* SECTIONS */
 
 section {
     padding: 75px 8%;
@@ -124,6 +149,8 @@ section p {
     max-width: 750px;
     margin: auto;
 }
+
+/* TOKEN CARDS */
 
 .cards {
     display: grid;
@@ -148,6 +175,8 @@ section p {
     font-size: 14px;
 }
 
+/* CONTRACT */
+
 .contract {
     background: #111a32;
     border: 1px solid #26375e;
@@ -163,6 +192,8 @@ section p {
     font-size: 13px;
 }
 
+/* FOOTER */
+
 footer {
     background: #0d1225;
     text-align: center;
@@ -176,7 +207,10 @@ footer a {
     text-decoration: none;
 }
 
+/* MOBILE */
+
 @media(max-width: 650px) {
+
     header {
         flex-direction: column;
         gap: 20px;
@@ -194,64 +228,108 @@ footer a {
     section {
         padding: 55px 6%;
     }
+
 }
+
 </style>
+
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
-    <div class="logo">TEX<span>BIT</span></div>
+    <div class="logo">
+
+        <img src="logo.svg" alt="TEXBIT Logo">
+
+        TEX<span>BIT</span>
+
+    </div>
 
     <nav>
+
         <a href="#home">Home</a>
+
         <a href="#about">About</a>
+
         <a href="#token">Token</a>
+
         <a href="#contact">Contact</a>
+
     </nav>
 
 </header>
 
+
+<!-- HOME -->
+
 <div class="hero" id="home">
 
-    <div class="coin">T</div>
+    <div class="coin">
+
+        <img src="logo.svg" alt="TEXBIT">
+
+    </div>
 
     <h1>TEX<span>BIT</span></h1>
 
     <p>
+
         Welcome to the official TEXBIT website.
+
         Discover TEXBIT, a digital token built on
+
         the Base blockchain network.
+
     </p>
 
     <a class="button"
-       href="https://basescan.org/token/0xc9aE38Eed4c2905066bB3B8FbC1B9A1Fd237Da9F"
-       target="_blank">
+
+       href="https://basescan.org/token/0xd3de5eeaa99be497c0d646a533dd19547503fa13"
+
+       target="_blank"
+       rel="noopener noreferrer">
+
        View Contract
+
     </a>
 
-    <a class="button"
-       href="#about">
+    <a class="button" href="#about">
+
        Explore TEXBIT
+
     </a>
 
 </div>
+
+
+<!-- ABOUT -->
 
 <section id="about">
 
     <h2>About TEXBIT</h2>
 
     <p>
+
         TEXBIT is a cryptocurrency project built
+
         on the Base Network.
 
         Our goal is to develop a recognizable
+
         digital asset and build a community
+
         around the TEXBIT ecosystem.
+
     </p>
 
 </section>
+
+
+<!-- TOKEN -->
 
 <section id="token">
 
@@ -260,61 +338,96 @@ footer a {
     <div class="cards">
 
         <div class="card">
+
             <h3>Token Name</h3>
+
             <p>texbit</p>
+
         </div>
 
         <div class="card">
+
             <h3>Symbol</h3>
+
             <p>TEXBIT</p>
+
         </div>
 
         <div class="card">
+
             <h3>Blockchain</h3>
+
             <p>Base Network</p>
+
         </div>
 
         <div class="card">
+
             <h3>Total Supply</h3>
+
             <p>1,000,000,000 TEXBIT</p>
+
         </div>
 
     </div>
 
+
+    <!-- OFFICIAL CONTRACT -->
+
     <div class="contract">
+
         <h3>Official Contract Address</h3>
 
         <p>
-        0xc9aE38Eed4c2905066bB3B8FbC1B9A1Fd237Da9F
+
+        0xd3de5eeaa99be497c0d646a533dd19547503fa13
+
         </p>
 
         <br>
 
         <a class="button"
-           href="https://basescan.org/token/0xc9aE38Eed4c2905066bB3B8FbC1B9A1Fd237Da9F"
-           target="_blank">
+
+           href="https://basescan.org/token/0xd3de5eeaa99be497c0d646a533dd19547503fa13"
+
+           target="_blank"
+           rel="noopener noreferrer">
+
            Verify on BaseScan
+
         </a>
+
     </div>
 
 </section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
 
     <h2>Contact TEXBIT</h2>
 
     <p>
+
         For official inquiries and communication,
+
         contact the TEXBIT team.
+
     </p>
 
     <br>
 
     <a class="button" href="mailto:crypto@texbit.com">
+
         crypto@texbit.com
+
     </a>
 
 </section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -327,4 +440,5 @@ footer a {
 </footer>
 
 </body>
+
 </html>
